@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Aula Prática</title>
+    </head>
+    <body>
+        <main>
+            <h1>Comando de Exemplo</h1>
+            <p>Texto de parágrafo 01</p>
+            <p id="para">Texto de parágrafo 02</p>
+            <p id="para">Texto de parágrafo 03</p>
+        </main>
+        <footer>
+            <p>Direitos Reservados 2002 - 2024 | Daniel Diniz</p>
+        </footer>
+        <script>
+            let paragrafo = document.querySelector("#para");
+            paragrafo.addEventListener('mouseover', trocaTexto);
+            function trocaTexto(){
+                paragrafo.innerHTML="Novo texto do parágrafo 02!";
+            }
+        </script>
+    </body>
+</html>
